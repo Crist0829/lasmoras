@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 .back-to-top:hover {
-  background: #1dc8cd;
+  background: #3D1F55;
   color: #fff;
 }
 .back-to-top.active {
@@ -74,6 +74,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+
+
+# Back to top button
+--------------------------------------------------------------*/
+.contact-button {
+  position: fixed;
+  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  color: #fff;
+  border-radius: 100%;
+  left: 20px;
+  bottom: 1rem;
+  transition: none;
+  visibility: hidden;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  padding: 1.5rem;
+}
+.contact-button i {
+  line-height: 0;
+  font-size: 30px;
+}
+.contact-button:focus {
+  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  color: #fff;
+  outline: none;
+}
+.contact-button:hover {
+  background: #3D1F55;
+  color: #fff;
+}
+.contact-button.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+
+
 # Header
 --------------------------------------------------------------*/
 #header {
@@ -535,11 +574,10 @@ section {
   overflow: hidden;
 }
 #about .about-img {
-  height: 510px;
+  height: auto;
   overflow: hidden;
 }
 #about .about-img img {
-  margin-left: -15px;
   max-width: 100%;
 }
 @media (max-width: 768px) {
@@ -1178,6 +1216,7 @@ section {
   padding: 30px 0;
   color: #333;
   font-size: 14px;
+  margin-bottom: 2rem;
 }
 #footer .credits {
   font-size: 13px;

@@ -110,6 +110,20 @@
     onscroll(document, toggleBacktotop)
   }
 
+  let contactButton = select('.contact-button')
+  if (contactButton) {
+    const toggleBacktotop = () => {
+      if (window.scrollY > 100) {
+        contactButton.classList.add('active')
+      } else {
+        contactButton.classList.remove('active')
+      }
+    }
+    window.addEventListener('load', toggleBacktotop)
+    onscroll(document, toggleBacktotop)
+  }
+  
+
   /**
    * Mobile nav toggle
    */
