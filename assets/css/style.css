@@ -1,13 +1,15 @@
 /**
-* Template Name: Avilon - v4.6.1
-* Template URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+Las moras - Proyecto de loteo para inversores y compradores
 */
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+#map{
+  width: 100%;
+  height: 500px;
+}
+
 body {
   background: #fff;
   color: #666666;
@@ -16,13 +18,13 @@ body {
 }
 
 a {
-  color: #1dc8cd;
+  color: #74e1ec;
   text-decoration: none;
   transition: 0.5s;
 }
 
 a:hover, a:active, a:focus {
-  color: #1dc9ce;
+  color: #74e1ec;
   outline: none;
   text-decoration: none;
 }
@@ -44,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  background: linear-gradient(45deg, #74e0ec, #278c97);
   color: #fff;
   border-radius: 4px 4px 0 0;
   right: 15px;
@@ -60,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 .back-to-top:focus {
-  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  background: linear-gradient(45deg, #74e1ec, #278c97);
   color: #fff;
   outline: none;
 }
@@ -80,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 .contact-button {
   position: fixed;
-  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  background: linear-gradient(45deg, #74e0ec, #278c97);
   color: #fff;
   border-radius: 100%;
   left: 20px;
@@ -97,12 +99,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
 }
 .contact-button:focus {
-  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  background: linear-gradient(45deg, #278c97, #74e1ec);
   color: #fff;
   outline: none;
 }
 .contact-button:hover {
-  background: #3D1F55;
+  background: #278c97;
   color: #fff;
 }
 .contact-button.active {
@@ -119,13 +121,13 @@ h1, h2, h3, h4, h5, h6 {
   height: 90px;
   transition: all 0.5s;
   z-index: 997;
-  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  background: linear-gradient(45deg, #278c97, #74e1ec);
 }
 #header.header-transparent {
   background: transparent;
 }
 #header.header-scrolled {
-  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  background: linear-gradient(45deg, #278c97, #74e1ec);
   height: 70px;
   transition: all 0.5s;
 }
@@ -140,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 #header #logo h1 a, #header #logo h1 a:hover {
-  color: #fff;
+  color: rgb(7, 7, 7);
 }
 @media (max-width: 768px) {
   #header #logo h1 {
@@ -238,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #7c25c4;
+  color: #74e1ec;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -326,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333333;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #7c25c4;
+  color: #74e1ec;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -352,7 +354,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #7c25c4;
+  color: #74e1ec;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -364,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #59069cd5, #7d25c4bb), url("../img/fondo.jpg") center top no-repeat;
+  background: linear-gradient(45deg, #278c97e3, #74e0ecd7), url("../img/fondo.jpg") center top no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -396,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 400;
   line-height: 56px;
-  color: #fff;
+  color: black;
 }
 @media (max-width: 768px) {
   #hero h2 {
@@ -405,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #hero p {
-  color: #fff;
+  color: black;
   margin-bottom: 20px;
   padding: 0 15px;
   font-size: 24px;
@@ -431,7 +433,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #hero .btn-get-started:hover {
-  color: #7c25c4;
+  color: black;
   background: #fff;
 }
 #hero .product-screens {
@@ -503,8 +505,8 @@ section {
   display: block;
   width: 60px;
   height: 3px;
-  background: #7c25c4;
-  background: linear-gradient(0deg, #7c25c4 0%, #7c25c4 100%);
+  background: #74e1ec;
+  background: linear-gradient(0deg, #74e1ec 0%, #74e1ec 100%);
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -610,7 +612,7 @@ section {
 #about .content i {
   font-size: 20px;
   padding-right: 4px;
-  color: #7c25c4;
+  color: #278c97;
 }
 #about .content ul {
   list-style: none;
@@ -657,7 +659,7 @@ section {
   
   font-size: 20px;
   padding-right: 4px;
-  color: #7c25c4;
+  color: #278c97;
 }
 
 #features .content ul {
@@ -669,8 +671,8 @@ section {
 }
 
 #features .icon i:before {
-  background: #7c25c4;
-  background: linear-gradient(45deg, #3D1F55 0%, #7c25c4 100%);
+  background: #74e1ec;
+  background: linear-gradient(45deg, #278c97 0%, #74e1ec 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -726,9 +728,8 @@ section {
   line-height: 1;
 }
 #advanced-features i:before {
-  background: #3D1F55;
-  background: linear-gradient(45deg, #3D1F55 0%, #7c25c4 100%);
-  background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+  background: #278c97;
+  background: linear-gradient(45deg, #278c97 0%, #74e1ec 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -760,7 +761,7 @@ section {
 --------------------------------*/
 #call-to-action {
   overflow: hidden;
-  background: linear-gradient(#3d1f5580, #7d25c46b), url(../img/imagen01.jpg) fixed center center;
+  background: linear-gradient(#74e0eca4, #278c9780), url(../img/zona/05.jpg) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -793,8 +794,8 @@ section {
   color: #fff;
 }
 #call-to-action .cta-btn:hover {
-  background: #7c25c4;
-  border: 2px solid #7c25c4;
+  background: #74e1ec;
+  border: 2px solid #74e1ec;
 }
 
 /* More Features Section
@@ -821,8 +822,8 @@ section {
   line-height: 0;
 }
 #more-features .icon i:before {
-  background: #3D1F55;
-  background: linear-gradient(45deg, #3D1F55 0%, #7c25c4 100%);
+  background: #278c97;
+  background: linear-gradient(45deg, #278c97 0%, #74e1ec 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -894,7 +895,7 @@ section {
 }
 #pricing h4 {
   font-size: 46px;
-  color: #7c25c4;
+  color: #74e1ec;
   font-weight: 300;
 }
 #pricing h4 sup {
@@ -916,7 +917,7 @@ section {
   padding-bottom: 12px;
 }
 #pricing ul i {
-  color: #7c25c4;
+  color: #74e1ec;
   font-size: 18px;
   padding-right: 4px;
 }
@@ -932,10 +933,10 @@ section {
   font-family: "Montserrat", sans-serif;
 }
 #pricing .featured {
-  border: 2px solid #7c25c4;
+  border: 2px solid #74e1ec;
 }
 #pricing .featured .get-started-btn {
-  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  background: linear-gradient(45deg, #278c97, #74e1ec);
 }
 
 /* Frequently Asked Questions Section
@@ -956,13 +957,13 @@ section {
 #faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #7c25c4;
+  font-family: #74e1ec;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #7c25c4;
+  color: #74e1ec;
   transition: 0.3s;
 }
 #faq .faq-list i {
@@ -982,7 +983,7 @@ section {
   color: black;
 }
 #faq .faq-list .collapsed:hover {
-  color: #7c25c4;
+  color: #74e1ec;
 }
 #faq .faq-list .collapsed .icon-show {
   display: inline-block;
@@ -1028,7 +1029,7 @@ section {
   color: #b3b3b3;
 }
 #team .member .social a:hover {
-  color: #7c25c4;
+  color: #74e1ec;
 }
 #team .member .social i {
   font-size: 18px;
@@ -1091,7 +1092,7 @@ section {
   font-weight: 300;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #7c25c4;
+  color: #278c97;
 }
 #contact .contact-about p {
   font-size: 14px;
@@ -1105,14 +1106,14 @@ section {
 #contact .social-links a {
   font-size: 18px;
   background: #fff;
-  color: #7c25c4;
+  color: #278c97;
   padding: 8px 0;
   margin-right: 4px;
   border-radius: 50%;
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #7c25c4;
+  border: 1px solid #74e1ec;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1121,7 +1122,7 @@ section {
   line-height: 0;
 }
 #contact .social-links a:hover {
-  background: #1dc8cd;
+  background: #278c97;
   color: #fff;
 }
 #contact .info {
@@ -1129,7 +1130,7 @@ section {
 }
 #contact .info i {
   font-size: 32px;
-  color: #7c25c4;
+  color: #278c97;
   float: left;
   line-height: 0;
 }
@@ -1149,7 +1150,7 @@ section {
 #contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #7c25c4;
+  background: #74e1ec;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1167,7 +1168,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #7c25c4;
+  border: 3px solid #74e1ec;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1178,10 +1179,10 @@ section {
   font-size: 14px;
 }
 #contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #7c25c4;
+  background-color: #74e1ec;
 }
 #contact .php-email-form button[type=submit] {
-  background: linear-gradient(45deg, #3D1F55, #7c25c4);
+  background: linear-gradient(45deg, #278c97, #74e1ec);
   border: 0;
   border-radius: 20px;
   padding: 8px 30px;
@@ -1230,5 +1231,5 @@ section {
   padding-left: 0;
 }
 #footer .footer-links a:hover {
-  color: #7c25c4;
+  color: #74e1ec;
 }
